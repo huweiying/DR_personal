@@ -8,7 +8,6 @@
 					url:"data/product/onclick.php",
 					data:{sid:sid},
 					success:function(data){
-						//console.log(data[0].price,data.pic,data.title,data.comment_count);
 						var html="";
 						for(var x=0;x<data.length;x++){
 						html+=`
