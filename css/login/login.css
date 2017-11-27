@@ -1,0 +1,132 @@
+/*轮播功能*/
+.slider{
+	width:2000px;height:1200px;
+	margin:0 auto;
+	position:relative;
+}
+.slider>img{
+	width:100%;
+	opacity:0;
+	position:absolute;top:0;left:0;
+	transition:all .5s linear;
+	margin:0 auto;
+ }
+ .slider>img.show{opacity:1;}
+.dr-login{
+	position:absolute;top:235px;left:1072px;
+	width:312px;
+	height:382px;
+	background:#fff;
+}
+.dr-login>h3{
+	height: 38px;
+    font-size: 18px;
+    color: #c67c59;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 14px;
+}
+.dr-login>input.uname{
+	display: block;
+    width: 248px;
+    height:40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+	margin:0 auto;
+    margin-top: 12px;
+    color: #666;
+    line-height: 38px;
+    padding-left: 38px;
+}
+input::-webkit-input-placeholder{
+	color:#CCC9C9;
+}
+.dr-login>input.upwd{
+	border: 1px solid #e6e6e6;
+    border-radius: 4px;
+	color: #666;
+	margin:19px;
+	margin-left:32px;
+	width:248px;
+	height: 40px;
+	padding-left:38px;
+}
+.yanzheng{
+	color:#c67c59;
+}
+.dr-login>p{
+	width:254px;
+	height:12px;
+	padding-left:55px;
+	margin-top:10px;
+}
+.dr-login>p>a{
+	color:#c67c59;
+	text-decoration:underline;
+}
+.denglu{
+	border: 1px solid #c57d5c;
+    color: #c57d5c;
+	display: inline-block;
+    width: 248px;
+    height: 38px;
+    margin-top: 20px;
+    border-radius: 4px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+	margin-left:30px;
+}
+.join{
+    color:#fff;
+	border:1px solid #c57d5c;
+    background:#c57d5c;
+	display: inline-block;
+    width: 248px;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 4px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+	margin-left:30px;
+}
+.dr-login>h4{
+	text-align:center;
+	margin:0 auto;
+	margin-top:10px;
+	color:#c57d5c;
+	font-size:12px;
+
+}
+.model{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background: rgba(180,180,180,.6);
+	z-index: 300;
+	display: none;
+}
+.rem_upwd{
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-top: -50px;
+	margin-left: -150px;
+	padding:20px 30px;
+	width:300px;
+	height:100px;
+	background: #fff;
+	box-shadow: 5px 5px 5px #bbb;
+}
+.rem_upwd>.btn{
+	float:right;
+	margin: 20px 10px;
+	padding:5px 10px;
+	border:0px;
+	background-color:#c57d57;
+	color:#fff;
+	border-radius: 5px;
+}

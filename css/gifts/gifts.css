@@ -1,0 +1,76 @@
+.second{
+	height:250px;
+	background:#f0f1f3;
+	display:flex;
+	justify-content:center;
+}
+.s100{
+	width:1200px;
+	text-align:center;
+	display:flex;
+}
+.second-left{
+	width:35%;
+	margin-top:32px;
+}
+.sl-f1{
+	font:28px simsun;
+	margin:32px auto;
+	color:#000;
+}
+.sl-f2{
+	width:80px;
+	height:3px;
+	border-top:2px solid #898989;
+	margin:0 auto;
+	margin-bottom:12px;
+}
+.sl-f3,.sl-f4{
+	font:20px simsun;
+	color:#666;
+	height:32px;
+}
+.second-center{
+	width:30%;
+}
+.sc-f1{
+	display:block;
+	width:180px;
+	height:40px;
+	line-height:40px;
+	background:#c67c59;
+	font:18px/40px simsun;
+	color:#fff;
+	margin:0 auto;
+	margin-top:132px;
+}
+.sc-f2{
+	font:14px/34px simsun;
+	color:#666;
+}
+.second-right{
+	width:35%;
+}
+.sr-f1{
+	height:95px;
+	width:420px;
+	font:48px/95px "microsoft yahei";
+	margin-top:38px;
+	color:#999;
+}
+.sr-f2{
+	font:24px/30px simsun;
+	color:#c67c59;
+}
+.sr-f3{
+	font:18px/34px "microsoft yahei";
+	color:#c67c59;
+}
+.sr-f3-1{
+	color:#999;
+}
+.third, .fourth, .fifth, .sixth, .seventh, .eighth{
+	display:flex;
+	justify-content:center;
+	margin:0 auto;
+}

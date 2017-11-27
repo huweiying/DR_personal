@@ -1,0 +1,249 @@
+
+.dr-bread{
+font-family:"SimSun";
+height:70px;
+font-size:0;
+position:relative;
+left:50px;
+}
+.drring_all-bread{
+font-size:0;
+color:#666;
+margin-left:9px;
+height:70px;
+line-height:70px;
+}
+.drring_all-bread a,.drring_all-bread span{
+font-size:14px;
+color:#666;
+padding-left:6px;
+}
+.drring_all-bread a:hover{
+color:#dbc7ba;
+}
+.drring_all-bread a.active,.drring_all-bread span.active{
+color:#dbc7ba;
+}
+.shopMain{
+width:1100px;
+margin:0 auto;
+}
+.shopBanner{
+position:relative;
+height:400px;
+overflow:hidden;
+}
+.shopBanPics{
+position:relative;
+height:100%;
+}
+.shopBanPics li{
+position:absolute;
+top:0;
+left:0
+}
+.shopBanNav{
+position:absolute;
+bottom:0;
+left:499px;
+width:1000px;
+height:28px;
+margin-left:-500px;
+z-index:1;
+text-align:center;
+font-size:0;
+}
+.shopBanNav .shopBanNavBg{
+width:249px;
+height:30px;
+background:#B4BCC3;
+position:absolute;
+bottom:0;
+left:250px;
+}
+
+.shopBanNav .shopBanNavBg:hover{
+background:#737678;
+}
+.shopBanNav .shopBanNavBg1{
+width:249px;
+height:30px;
+background:#B4BCC3;
+position:absolute;
+bottom:0;
+right:250px;
+}
+.shopBanNav .shopBanNavBg1:hover{
+background:#737678;
+}
+.shopBanNav a{
+display:block;
+width:100%;
+text-align:center;
+color:#fff;
+font-size:14px;
+}
+.shopBanNav .shopBanNavBg a{
+position:absolute;
+top:7px;
+}
+.shopBanNav .shopBanNavBg1 a{
+position:absolute;
+top:7px;
+}
+.shopServer{
+width:100%;
+height:100px;
+margin:34px auto 30px;
+}
+.shopServerDic{
+float:left;
+width:190px;
+height:56px;
+padding-left:54px;
+margin-right:60px;
+/*background:url('../../imgs/shop/serverIcon.png') no-repeat;*/
+margin-top:16px;
+position:relative;
+left:40px;
+}
+.shopServerDic h3{
+line-height:16px;
+margin-top:10px;
+font-size:14px;
+color:#d39b81;
+}
+.shopServerDic p{
+padding-right:1px;
+font-size:12px;
+line-height:20px;
+width:136px;
+color:#999;
+font-family:simsun;
+}
+.shopzjsd{
+background-position:10px 16px;
+}
+.shopServerOrder {
+display:none;
+}
+.shopSearch{
+padding:0 26px;
+background:#f8f8f8;
+height:70px;
+line-height:70px;
+width:1030px;
+position:relative;
+left:40px;
+}
+.shopSearch_left a{
+color: #c57d5c;
+margin-right:18px;
+}
+.shopSearch_left a i{
+color: #999999;
+margin-right:0px;
+}
+
+.shopSearch_left a, .shopSearch_left span{
+vertical-align: middle;
+font-size: 14px;
+}
+
+.shopSearch{
+display:flex;
+justify-content:space-between;
+}
+.shopSearch .shopSearch_left{
+width:420px;
+}
+.shopSearch_right {
+width:382px;
+position: relative;
+z-index: 2;
+}
+
+.shopSearch_right input {
+width:310px;
+border:1px solid #e6e6e6;
+padding:5px 0 5px 8px;
+width:300px;
+border-radius:3px;
+vertical-align:middle;
+}
+.shopSearch .searchBtn {
+height:22px;
+line-height:22px;
+padding: 2px 20px;
+color:#fff;
+text-align:center;
+vertical-align:middle;
+background:#c57d5c;
+border-radius:3px;
+}
+
+.shopListMain {
+width:100%;;
+margin-top:44px;
+}
+
+.shopListTitle {
+/*background: url('../../imgs/shop/titleLine.png') no-repeat center center;*/
+height: 20px;
+line-height: 20px;
+font-size: 18px;
+color: #c67c59;
+text-align: center;
+margin-bottom: 26px;
+position:relative;
+right:50px;
+}
+
+.shopInfo{
+width:300px;
+height:522px;
+margin-left:50px;
+text-align:center;
+}
+
+
+.shopInfo_top h4{
+border:1px dashed #ddd;
+height:50px;
+line-height:50px;
+font-size:20px;
+color:#C67D5A;
+cursor:pointer;
+}
+.shopInfo_top a.hrefLink{
+display:block;
+margin-bottom:20px;
+cursor:pointer;
+color:#888;
+}
+.shopInfo_top a.hrefLink:hover{
+opacity:0.6;
+}
+.shopInfo p{
+line-height:24px;
+color:#888;
+font-size:14px;
+width:260px;
+margin:12px auto 0;
+}
+.shopInfo p a.title{
+color:#888;
+}
+.shopInfo p a.title:hover{
+color:#C67D5A;
+}
+.shopInfo p.nomg:hover{
+color:#C67D5A;
+}
+
+#mymap{
+    margin:10px auto;
+    width: 800px;
+    height: 400px;
+}
+

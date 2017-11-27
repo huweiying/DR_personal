@@ -1,0 +1,149 @@
+body{color:#333;font-family: "simsun";}
+.main{min-width:1350px;margin:0 auto;}
+section{width:1200px;margin:0 auto;}
+/*面包屑导航*/
+.bread{
+    width:1000px;margin:0 auto;
+    display:flex;
+    line-height: 80px;
+}
+.bread>li{
+    min-width:30px;
+    /*color:black;*/
+}
+.bread>li>a{
+    color:#333;
+}
+/*轮播图片*/
+.banner{/**************/
+    width:1350px;/********/
+    margin:0 auto;
+}
+.banner>img{width:1350px;}
+/*页面子导航*/
+.nav1{
+    display:flex;
+    width:1000px;
+    border:1px solid #ddd;
+    margin:20px auto;
+}
+ul.nav1>li{
+    width:80px;
+    line-height: 40px;
+    text-align:center;
+}
+ul.nav1 a{
+    color:#333;
+}
+ul.nav1>li.active>a{
+    color: #c57d5c;
+}
+/*主要部分显示 包裹列表ul的div*/
+section>.floor1{
+    width:1000px;
+    margin:20px auto;
+}
+section>.floor1>ul.plist{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:0 auto;
+}
+/*floor1>img, h1, p*/
+.floor1>.plist li{
+    width：480px;
+    border-bottom:2px solid #ddd;
+    margin-bottom:40px;
+    font-family: "simsun";
+    opacity:0.8;
+    background-color:#fafafa;
+}
+.floor1>.plist li img{width:480px;}
+.floor1>.plist li.active{
+    background-color:#fff;
+}
+.floor1>.plist li h1{
+    font-size:28px;
+    margin:30px auto;
+    text-align: center;
+    color:#333;
+}
+.floor1>.plist li.active h1{color:#c57d5c;}
+.floor1>.plist li div hr{
+    align:center;width:60px;
+    border-bottom: 2px solid #333;
+}
+.floor1>.plist li.active hr{
+    align:center;width:60px;
+    border-bottom: 2px solid #c57d5c;
+}
+.floor1>.plist li div p{
+    text-align:center;
+    margin:20px auto;margin-bottom:20px;
+    font-size:18px;
+    color:#333;
+}
+.floor1>.plist li.active div p{color:#c57d5c;}
+/*页码*/
+.page{
+    margin:0 auto;padding:0;
+    width:380px;
+}
+.page>a{
+    display:inline-block;
+    line-height:30px;
+    width:60px;text-align:center;
+    border:1px solid #ddd;
+    border-right:0;
+    color:#333333;
+    margin:-4px;
+}
+.page .lastPage{border-right:1px solid #ddd;}
+.page span{display:inline-block;}
+.page>a.pages{width:30px;}
+.others{
+    width:1000px;
+    margin:20px auto;
+
+}
+.others>div.lookFor{
+    height:55px;
+    background-color:#dbc7ba;
+    position: relative;
+    margin:40px auto;
+}
+.others .lookFor>img{
+    position:absolute;
+    margin:-25px 440px;
+}
+.others>div.showName>p{
+    font-size: 26px;
+    width:220px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:30px;
+}
+/*其他相关推荐*/
+.lookList{
+    width:1000px;
+    margin:20px auto;
+    display:flex;
+    justify-content: space-between;
+}
+.lookList li{
+    width:150px;
+    height:216px;
+
+}
+.lookList li img{border:1px solid #ddd;}
+.lookList li h3{
+    margin:10px auto;
+    text-align:center;
+    color:#333;
+}
+.lookList li hr{width:24px;color:#333;}
+.lookList li p{
+    margin:10px auto;
+    text-align:center;
+    color:#333;
+}

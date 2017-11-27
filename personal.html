@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/personal/personal.css">
+</head>
+<body>
+<header>
+    <img src="imgs/icon/loading.gif" alt="">页面加载中...
+    <!--页面头部logo+nav部分，请用window.load()加载头部-->
+</header>
+	<!--主体部分-->
+	<div class="main">
+		<div class="left">
+			<ul>
+				<li>
+					<h4>购物</h4>
+					<ul>
+						<li><a href="dr_cart.html">我的购物车</a></li>
+						<li>我的收藏</li>
+						<li>我的粉钻预约</li>
+						<li>我的进店预约</li>
+					</ul>
+				</li>
+				<li>
+					<h4>订单中心</h4>
+					<ul>
+						<li>我的订单</li>
+						<li>评论/晒单</li>
+					</ul>
+				</li>
+				<li>
+					<h4>客户服务</h4>
+					<ul>
+						<li>退换货办理</li>
+					</ul>
+				</li>
+				<li>
+					<h4>DR真爱俱乐部</h4>
+					<ul>
+						<li>我的会员</li>
+						<li>我的积分</li>
+						<li>我的卡包</li>
+						<li>纪念日管理</li>
+					</ul>
+				</li>
+				<li>
+					<h4>账户设置</h4>
+				</li>
+				<li>
+					<h4>个人资料</h4>
+					<ul>
+						<li>绑定手机</li>
+						<li>绑定邮箱</li>
+						<li>绑定账号</li>
+						<li>修改密码</li>
+						<li>地址管理</li>
+					</ul>
+				</li>
+				<li>
+					<h4>系统消息</h4>
+
+				</li>
+			</ul>
+		</div>
+		<div class="right">
+			<h4>个人资料</h4>
+			<ul>
+				<form action="data/personal/touxiang.php" method="post" enctype="multipart/form-data" target="hidden_frame">
+					<li class="head_picture">
+						<em>头像</em>
+						<a href="">
+							<img src="imgs/personal/defaultAvatar.png" class="awt" />
+							<input type="file" name="mypic" />
+							<input type="submit" value="上传" class="upload"/>
+						</a>
+						<span>支持JPG、PNG格式</span>
+					</li>
+					<li class="user_name">
+						<span>*</span>
+						<em>会员昵称：</em>
+						<input type="text" / class="my_name">
+						<i>4-16位字符</i>
+					</li>
+					<li class="user_realname">
+						<em class="span1">真实姓名：</em>
+						<input type="text" / class="my_realname">
+						<i>4-16位字符</i>
+					</li>
+					<li>
+						<em>性别</em>
+						<input type="radio" name="sex" class="c1" id="secret" checked>
+						<label for="secret">保密</label>
+						<input type="radio" name="sex" class="c1" id="boy">
+						<label for="boy">男</label>
+						<input type="radio" name="sex" class="c1" id="girl">
+						<label for="girl">女</label>
+					</li>
+					<li>
+						<em>情感状态</em>
+						<input type="radio" name="isMarry" id="bachelordom" checked>
+						<label for="bachelordom">单身</label>
+						<input type="radio" name="isMarry" id="love">
+						<label for="love">恋爱中</label>
+						<input type="radio" name="isMarry" id="engaged">
+						<label for="engaged">订婚</label>
+						<input type="radio" name="isMarry" id="married">
+						<label for="married">已婚</label>
+					</li>
+					<li>
+						<em>真爱宣言</em>
+						<textarea class="love" id="" cols="30" rows="10"></textarea>
+						<i>不超过100字</i>
+					</li>
+					<li>
+						<em>喜好</em>
+						<textarea class="speak" id="" cols="30" rows="10"></textarea>
+						<i>不超过100字</i>
+					</li>
+						<iframe name="hidden_frame" id="hidden_frame" style="display:none" frameborder="0">
+					</iframe>
+				</form>
+			</ul>
+			<h6 class="hh6">继续完善详细信息</h6>
+			<a href="" class="sure">提交</a>
+		</div>
+	</div>
+<footer>
+    <img src="imgs/icon/loading.gif" alt="">页面加载中...
+    <!--页面尾部，联系我们，请用window.load()加载头部-->
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/myQuery.js"></script>
+<script src="js/personal/personal.js"></script>
+</body>
+</html>

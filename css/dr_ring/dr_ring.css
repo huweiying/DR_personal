@@ -1,0 +1,60 @@
+.dr-bread{
+height:70px;
+line-height:70px;
+}
+.drring_all-bread a{
+font-size:14px;
+color:#666666;
+}
+.drring_all-bread a:hover{
+color:#DBC7BA;
+}
+.drring_all-bread span{
+font-size:14px;
+color:#666;
+}
+.w1000 {
+width:1000px;
+margin:0 auto;
+}
+.bg{
+background:#F6EFEF;
+height:747px;
+}
+.same_mg60{
+padding-top:60px;
+}
+.dr_samesellers-ring li a{
+display:block;
+width:235px;
+height:330px;
+background:#FFFFFF;
+}
+.dr_samesellers-ring li a img{
+width:235px;
+height:235px;
+}
+.dr_samesellers-top{
+height:23px;
+text-align:center;
+line-height:23px;
+color:#898989;
+}
+.dr_samesellers-word p.price{
+text-align:center;
+width:235px;
+padding:7px 0;
+color:#C57E80;
+font-size:10px;
+}
+.dr_samesellers-word p.details{
+text-align:center;
+width:235px;
+color:#898989;
+font-size:12px;
+}
+.dr_samesellers-ring{
+display:flex;
+justify-content:space-between;
+}
+

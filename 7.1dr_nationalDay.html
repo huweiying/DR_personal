@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <style>
+.main{
+    margin:0 auto;
+}
+/*首部图片*/
+.banner{
+    margin:0 auto;
+    background: url("imgs/7-explore/banner_bg.jpg") no-repeat center;
+    /*width:100%;*/
+    width:1300px;
+    height:623px;
+}
+/*活动规则*/
+.drRule{
+    margin:0 auto;
+    height:490px;
+    /*width:100%;*/
+    width:1300px;
+    background: url("imgs/7-explore/rule_bg.jpg") no-repeat center;
+    padding-top: 68px;
+}
+.drRule>h3{
+    font:38px simsun;
+    color:#333;
+    text-align:center;
+    margin-bottom:40px;
+}
+.drRule>p{
+    text-align: center;
+    font:simsun 15px;
+    color:#333;
+    line-height:35px;
+    margin-bottom:40px;
+}
+.drRule>.button{
+    margin:20px auto;
+    text-align:center;
+}
+.drRule>.button a{
+    font: 20px "microsoft yahei";
+    display:inline-block;
+    text-align:center;line-height:56px;
+    width:190px;height:56px;
+    background:#333;color:#fff;
+    border:1px solid #ddd;
+}
+.drRule>.last>p{
+    text-align:center;
+    font-size:16px;
+    /*padding:40px;*/
+}
+/*专属首饰盒 class="drBox"*/
+.drBox{
+    margin:0 auto;
+    width:1300px;
+    padding:100px 0;
+    background:url("imgs/7-explore/exBox_bg.jpg") no-repeat top;
+
+}
+.drBox .box1{
+    margin-top:-46px;
+    margin-left: 134px;
+    display: flex;
+    position:relative;
+}
+.drBox .box2{
+    margin-top:-46px;
+    margin-left: 134px;
+    display: flex;
+    position:relative;
+}
+.drBox>div>div{
+    width:500px;
+    margin-top:10px;
+}
+.drBox .intro{
+    margin-top:80px;
+}
+.drBox .intro>h1{
+    text-align: center;
+    font:30px simsun;
+    margin-top:20px;
+}
+.drBox .intro>hr{
+    width:66px;
+    margin-top:20px;
+}
+.drBox .intro>p{
+    font:16px simsun;
+    line-height:36px;
+    text-align:center;
+    margin-top:18px;
+
+}
+.drBox .box-img{
+    position:relative;
+}
+.drBox .box-img img{
+    width:500px;
+
+}
+
+/*放大镜*/
+.drBox .largeDiv{
+    position:absolute;
+    display:none;
+    width: 300px;height:400px;
+    border-radius:50%;
+    top:0;
+    left:0;
+}
+.img .mask{
+    width:200px;height:200px;
+    border:1px solid #ddd;border-radius: 50%;
+    position:absolute;
+    display:none;/*遮罩层是否显示*/
+    top:0;left:0;
+    background:#ffa;opacity:0.6;
+}
+.superMask{
+    width:500px;height:530px;
+    position:absolute;
+    top:0;left:0;
+    cursor:move;z-index: 1;
+}
+/*首饰盒2*/
+.drBox> .box2 .box-img{
+    margin-top:120px;
+    margin-left:76px;
+    /*margin-top:470px;*/
+}
+.drBox> .box2 .intro{
+    margin-top:303px;
+    margin-left:-30px;
+}
+/*mini 首饰盒*/
+.drBox.box3{
+    display:flex;
+    width:1300px;
+    background:url("imgs/7-explore/miniBox_bg.jpg") no-repeat top;
+}
+.drBox.box3>.box-img{
+
+    margin-left:60px;
+    margin-top:-20px;
+}
+.drBox.box3>.box-img img{
+    width:394px;height:580px;
+}
+.drBox.box3>.intro{
+    width:400px;
+    margin-left:225px;
+    margin-top:60px;
+}
+/*求婚钻戒 engagement*/
+.enIntro{
+    text-align: center;
+}
+.enIntro h1{
+    font:48px simsun;
+    /*color:#333;*/
+}
+.enIntro hr{width:66px;}
+.enIntro h2{font:36px simsun;margin-top:20px;}
+.enIntro p{font:24px simsun; margin-top:20px;}
+.enRing{
+    width:1020px;
+    margin:0 auto;
+
+}
+.enRing ul{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.enRing li{
+    background: #F0F0F0;
+    /*opacity:0.01;*/
+    width:320px;
+    height:370px;
+    margin:10px auto;
+}
+.enRing li p{
+    text-align: center;
+    font:14px simsun;
+    margin:10px auto;
+    color:#333;
+}
+.enRing li hr{width:40px;}
+.enRing li img{margin-top:30px;margin-bottom:20px;}
+.enRing li p.new{
+    font:23px simsun;
+    text-align: right;
+    padding:20px;
+}
+/*查看更多*/
+.more{
+    width:1300px;
+    margin:0 auto;
+    min-height:300px;
+    background:url("imgs/7-explore/engagement_bg.jpg") no-repeat top;
+    background-size:1300px auto;
+    padding:120px auto;
+}
+.more a{
+    font:20px simsun;
+    display:block;
+    width:200px;
+    line-height:50px;
+    background:#c57d5c;
+    text-align:center;
+    color:#fff;
+    margin:0 auto;
+    position:relative;
+    top:125px;
+
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <!--页头-->
+    <header>
+        <img src="imgs/icon/loading.gif" alt="">页面加载中...
+        <!--页面头部logo+nav部分，请用window.load()加载头部-->
+    </header>
+    <!--页面主体-->
+    <section>
+        <div class="main">
+            <!--首部图片-->
+            <div class="banner"></div>
+            <!--活动规则-->
+            <div class="drRule">
+                <h3>身体和灵魂 全部都要爱你</h3>
+                <p>有多少次，我们专注于沿途的风景 <br>
+                    追赶稍纵即逝的美景、醉心蔚然苍茫的原野 <br>
+                    却忽略了身边那个深爱的人，忘记与她十指紧扣、拥抱亲吻 <br>
+                    这个假期 <br>
+                    别赶路，好好去感受爱吧 <br>
+                </p>
+                <div class="button">
+                    <a href="#">活动规则</a>
+                    <a href="#">咨询DR真爱客服</a>
+                </div>
+                <div class="last">
+                    <p>赠品不叠加 数量有限</p>
+                </div>
+			</div>
+            <!--活动规则 end-->
+            <!--专属首饰盒-->
+            <div class="drBox">
+                <div class="box1">
+                    <!--大图-->
+                    <div class="largeDiv">
+                        <img src="imgs/7-explore/box1.jpg" alt="">
+                    </div>
+                    <!--大图 end-->
+                    <!--简介文字-->
+                    <div class="intro">
+                        <h1>DR专属首饰盒</h1>
+                        <hr />
+                        <p>用爱，慢慢填满一生 <br /> (首饰盒内不含饰品)</p>
+                        <p>单笔订单金额达 <br />¥12999元 <br />赠DR专属首饰盒</p>
+                        <p>尺寸约：185mm*185mm*40mm</p>
+                    </div>
+                    <!--简介文字 end-->
+                    <!--大图 遮罩层区域 遮罩-->
+                    <div class="box-img">
+                        <img src="imgs/7-explore/box1.jpg" alt="">
+                        <div class="superMask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <!--大图 遮罩层区域 遮罩 end-->
+                </div>
+                <div class="box2">
+                    <!--大图 遮罩层区域 遮罩-->
+                    <div class="box-img">
+                        <img src="imgs/7-explore/box2.jpg" alt="">
+                        <div class="superMask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <!--大图 遮罩层区域 遮罩 end-->
+                    <!--大图-->
+                    <div class="largeDiv">
+                        <img src="imgs/7-explore/box2.jpg" alt="">
+                    </div>
+                    <!--大图 end-->
+                    <!--简介文字-->
+                    <div class="intro">
+                        <h1>心形Plus首饰盒</h1>
+                        <hr />
+                        <p>大大的爱，装下你所有的喜欢 </p>
+                        <p>单笔订单金额达 <br />¥19999元 <br />赠心形Plus首饰盒</p>
+                        <p>尺寸约：209mm*218mm*92mm</p>
+                    </div>
+                    <!--简介文字 end-->
+                </div>
+            </div>
+            <div class="drBox box3">
+                <!--简介文字-->
+                <div class="intro">
+                    <h1>心形mini首饰盒</h1>
+                    <hr />
+                    <p>爱你，就把你装进“心”里</p>
+                    <p>DR真爱俱乐部会员购买任意“爱的礼物”
+                         <br />赠心形mini首饰盒</p>
+                    <p>尺寸约：142mm*138mm*94mm</p>
+                </div>
+                <!--简介文字 end-->
+                <!--大图 遮罩层区域 遮罩-->
+                <div class="box-img">
+                    <img src="imgs/7-explore/box3.jpg" alt="">
+                    <div class="superMask"></div>
+                    <div class="mask"></div>
+                </div>
+
+
+            </div>
+            <div class="engagement">
+                <div class="enIntro">
+                    <h1>ENGAGEMENT</h1>
+                    <hr>
+                    <h2>求婚钻戒</h2>
+                    <p>一枚DR 赠与此生挚爱</p>
+                </div>
+                <div class="enRing">
+                    <ul>
+                        <li><a href="#">
+                            <img src="imgs/7-explore/enRing1.jpg" alt="">
+                            <p class="title">LOCK ME 系列</p>
+                            <hr>
+                            <p>心·锁唯一</p>
+                        </a></li>
+                        <li><a href="#">
+
+                            <img src="imgs/7-explore/enRing2.jpg" alt="">
+                            <p class="title">Forever 系列</p>
+                            <hr>
+                            <p>奢华款</p>
+                        </a></li>
+                        <li><a href="#">
+
+                            <img src="imgs/7-explore/enRing3.jpg" alt="">
+                            <p class="title">I Swear 系列</p>
+                            <hr>
+                            <p>奢华款</p>
+                        </a></li>
+                        <li><a href="#">
+
+                            <img src="imgs/7-explore/enRing4.jpg" alt="">
+                            <p class="title">True Love 系列</p>
+                            <hr>
+                            <p>典雅</p>
+                        </a></li>
+                        <li><a href="#">
+
+                            <img src="imgs/7-explore/enRing5.jpg" alt="">
+                            <p class="title">With You 系列</p>
+                            <hr>
+                            <p>守护</p>
+                        </a></li>
+                        <li><a href="#">
+
+                            <img src="imgs/7-explore/enRing6.jpg" alt="">
+                            <p class="title">Priencess 系列</p>
+                            <hr>
+                            <p>花冠</p>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">查看更多求婚钻戒</a>
+            </div>
+        </div>
+
+    </section>
+    <!--页尾-->
+    <footer>
+        <img src="imgs/icon/loading.gif" alt="">页面加载中...
+        <!--页面尾部，联系我们，请用window.load()加载头部-->
+    </footer>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<!--<script src="js/myQuery.js"></script>-->
+<!--<script src="js/ajax.js"></script>-->
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+
+<!--<script>
+    (()=>{
+    var superMask=document.querySelector(".superMask"),
+        mask=document.querySelector(".mask"),
+        largeDiv=document.querySelector(".largeDiv");console.log(superMask);
+    superMask.onmouseover=(e)=>{//鼠标移入中图区域时
+        mask.style.display="block";
+        largeDiv.style.display="block";console.log(111);
+    }
+    superMask.onmouseleave=e=>{//鼠标移出中图区域时
+        mask.style.display="none";
+        largeDiv.style.display="none";
+    }
+    //使鼠标定位在遮罩层的中心位置处
+    var msize=500;sMsize=200;
+    superMask.onmousemove=e=>{
+        var x=e.offsetX,left=x-msize/2,
+            y=e.offsetY,top=y-msize/2;
+        if(left<0)left=0;
+        else if(left>sMsize-msize)left=sMsize-msize;
+        mask.style.left=left+"px";//console.log(left);
+        if(top<0)top=0;
+        else if(top>sMsize-msize)top=sMsize-msize;
+        mask.style.top=top+"px";//console.log(top);
+        //对应大图的定位
+        largeDiv.style.backgroundPosition=`${-left*700/500}px ${-top*800/350}px`
+    }
+    })();//调用
+
+	</script>
+	-->
+</html>

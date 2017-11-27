@@ -1,0 +1,118 @@
+/*轮播*/
+.slider{
+	width:2000px;height:1200px;
+	margin:0 auto;
+	position:relative;
+}
+.show{
+	width:100%;opacity:0;
+	position:absolute;top:0;left:0;
+	transition:all .5s linear;
+	margin:0 auto;
+ }
+/*注册框*/
+.dr-join{
+	position:absolute;top:235px;left:1072px;
+	width:312px;
+	height:382px;
+	background:#fff;
+	margin:0 auto;
+}
+.dj-f1{
+	list-style-type:none;
+	margin:0 auto;
+	display:flex;
+}
+.dj-f1>li{
+	font-size:20px;
+	margin-left:15px;
+	border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    color: #c67c59;
+	text-align:center;
+	line-height:47px;
+}
+.dj-f1 :first-child{
+	width:260px;
+	height:47px;
+}
+input::-webkit-input-placeholder{
+	color:#CCC9C9;
+}
+.span-uname,.span-pwd,.span-code{
+	display:inline-block;
+	margin:10px 0 0 70px;
+	font-size:12px;
+	color:red;
+}
+.join-phone,.join-word{
+	display:block;
+    width: 248px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+	margin:0 auto;
+    margin-top: 12px;
+    color: #666;
+    line-height: 38px;
+    padding-left: 38px;
+}
+.dj-f3-input{
+	width: 128px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin: 0px 0 0 32px;
+    color: #666;
+    line-height: 38px;
+    padding-left: 38px;
+}
+.dj-f3 a{
+    width: 105px;
+    height: 40px;
+    margin: 16px 0 0 11px;
+  
+    border: none;
+    color: #c57d5c;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+}
+.code{
+	display:none;
+}
+.showit{
+	display:inline-block;
+}
+.dj-f4{
+	margin:10px 0 0 32px;
+    font-size: 12px;
+}
+.dj-f4 a{
+	color: #c57d5c;
+}
+.ok{
+	width: 246px;
+    height: 38px;
+	cursor:pointer;
+	text-align:center;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin:20px 0 0 32px;
+    line-height: 38px;
+	border: 1px solid #c57d5c;
+    background: #c57d5c;
+    color: #fff;
+}
+.yiyou{
+	float:right;
+	margin:10px 20px 0 0;
+}
+/*app
+.span{
+	margin-left:40px;
+	font-size:12px;
+	color:red;
+}
+*/

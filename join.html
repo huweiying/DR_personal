@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/join/join.css" />
+</head>
+<body>
+<header>
+    <img src="imgs/icon/loading.gif" alt="">页面加载中...
+    <!--页面头部logo+nav部分，请用window.load()加载头部-->
+</header>
+	<!--主体部分-->
+	<!--轮播部分-->
+	<div class="slider" style="height:566px">
+		<img src="imgs/login/login.jpg" class="show" style="width:2000px" alt="1"/>
+		<img src="imgs/login/login2.jpg" style="width:2000px" alt="2" />
+	</div>
+	<!--注册框部分-->
+	<div class="dr-join">
+		<ul class="dj-f1">
+			<li>注册</li>
+			
+		</ul>
+		<div class="dj-f2">
+			<input type="text" class="join-phone" placeholder="请输入您注册的用户名"/>
+			<div class="">
+				<span class="span span-uname"></span>
+			</div>
+			<input type="password" class="join-word" placeholder="请输入密码"/>
+			<div>
+				<span class="span span-pwd"></span>
+			</div>
+		</div>
+		<div class="dj-f3">
+			<input type="text" class="dj-f3-input" placeholder="输入验证码"/>
+			<br />
+			<span class="span-code"></span>
+			<img src="data/join/code.php" class="code" />
+			<a href="#" class="showCode">获取验证码</a>
+		</div>
+		<div class="dj-f4">
+			<input type="checkbox" checked/>同意DarryRing用户
+			<a href="#">注册协议</a>和
+			<a href="#">隐私条款</a>
+		</div>
+		<div>
+			<button class="ok">立即加入DR族</button>
+		</div>
+		<div>
+			<a href="login.html" class="yiyou">>已有账户登录</a>
+		</div>
+	</div>
+<footer>
+    <img src="imgs/icon/loading.gif" >页面加载中...
+    <!--页面尾部，联系我们，请用window.load()加载头部-->
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/join/join.js"></script>
+</body>
+</html>

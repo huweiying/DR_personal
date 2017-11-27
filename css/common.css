@@ -1,0 +1,703 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, pre, a, address, big, cite, code, del, em, img, ins, q, s, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li,  form, label, table, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-style: normal;
+    font-variant-ligatures: inherit;
+    font-variant-caps: inherit;
+    font-variant-numeric: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    font-family: inherit;
+    font-style: normal;
+}
+body {
+    line-height: 1;
+    font-family: "microsoft yahei", arial;
+    font-size: 14px;
+    color: #888;
+    background: #fff;
+    min-width: 1024px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    cursor:pointer;
+    color:#cdcdcd;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+.lf{
+    float:left;
+}
+.rf{
+    float:right;
+}
+.clear:after{
+    display: block;
+    content: "";
+    clear:both;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*页面头部样式*/
+.dr_header{
+    width:100%;
+    font-family: "SimSun";
+    margin:13px;
+}
+.dr_member{
+    height:46px;
+    line-height:46px;
+    position: relative;
+}
+.dr_member>ul>li{
+    padding:0 12px;
+}
+.dr_member ul>li>a,.dr_address .allShop{
+    color:#8d8d8d;
+    font-size: 12px;
+}
+.dr_member ul>li>a:hover{
+    color:#bf967c;
+}
+/*语言下拉菜单样式*/
+
+.dr_member .dropdown-menu{
+    position: absolute;
+    top:30px;
+    left:446px;
+    z-index: 30;
+    width:70px;
+    background: #fff;
+    height:0;
+    overflow: hidden;
+    transition:height .3s linear;
+    -moz-transition:height .3s linear;
+    -o-transition:height .3s linear;
+    -webkit-transition:height .3s linear;
+}
+.dr_member .dropdown-menu.hover{
+    height:40px;
+
+}
+.dr_member .dropdown-menu>.item{
+    height:20px;
+    font-size: 12px;
+
+}
+.dr_member .dropdown-menu>.item>a{
+    position: relative;
+    top:-12px;
+}
+
+
+.dr_address{
+    position:absolute;
+    top:45%;
+    left:1050px;
+    width:200px;
+    height:40px;
+}
+
+.dr_address .location{
+    color:#bf967c;
+    display: inline-block;
+    height:16px;
+    font-size: 12px;
+    padding-left: 14px;
+    background: url("../imgs/icon/ico-gps.png") no-repeat;
+}
+.dr_address .allShop{
+    display: inline-block;
+    padding:10px;
+    position:absolute;
+    top:-7px;
+    left:50px;
+    z-index:200;
+}
+.dr_address .allShop.hover{
+    border: 1px solid #c57d57;
+    border-bottom: transparent;
+    background-color: #fff;
+
+}
+/*全国店铺下拉框样式*/
+div.city{
+    width:270px;
+    position:absolute;
+    top:24px;
+    left:-139px;
+    border:1px solid #c57d57;
+    display: none;
+    z-index: 100;
+    transition: height .3s linear;
+    background: #fff;
+}
+div.city.hover{
+    display: block;
+}
+div.city ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+div.city a{
+    color:#666;
+    display: inline-block;
+    padding:10px;
+
+}
+.dr_idCard{
+    position: absolute;
+    top:75%;
+    left: 64%;
+}
+.dr_idCard>input{
+    width:282px;
+    padding-right:20px;
+}
+.dr_idCard i{
+    position:absolute;
+    top: 3px;
+    left:350px;
+    width:20px;
+    height:20px;
+    cursor: pointer;
+    background: url("../imgs/icon/ico-seach.png") no-repeat;
+}
+nav{
+    width:100%;
+    height:40px;
+    background-color: #797979;
+    margin:10px 0;
+    position: relative;
+}
+nav .container{
+    width:900px;
+}
+nav .container>ul{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul>li>a{
+    color:#fff;
+    font-size:16px;
+    padding:0 30px;
+    line-height: 40px;
+    display: inline-block;
+}
+nav ul>li>a:hover{
+    color:#DBC7BA;
+}
+/*下拉导航样式*/
+nav .dropdown{
+    position: absolute;
+    top:40px;
+    left:0px;
+    width:900px;
+    height:300px;
+    z-index: 50;
+    background: #fff;
+    padding:50px 70px;
+    display: none;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+nav .dropdown.hover{
+    display: block;
+    opacity: 1;
+}
+/*下拉导航dr样式*/
+nav i{
+    display: inline-block;
+    height:200px;
+    border-left:1px dotted #aaa;
+}
+ nav .dr .left{
+    width:50%;
+    height:160px;
+    background:  #fff url("../imgs/header/drword.png") no-repeat 0 0;
+}
+nav  .dr .left b{
+    background: url("../imgs/icon/coin_left.png");
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    top:170px;
+    left:210px;
+}
+nav .dr .left a{
+    color:#666;
+    font-size: 18px;
+    position: absolute;
+    top:180px;
+    left:130px;
+}
+/*下拉导航ring样式*/
+.ring .left,.ring .right{
+    width: 47%;
+    height:140px;
+
+}
+.ring li>a{
+    color:#797979;
+    display: block;
+
+}
+.ring_show{
+    width:150px;
+    height:150px;
+    position: relative;
+    top:25px;
+}
+.ring_show>img{
+    width: 150px;
+    height: 150px;
+}
+.ring li>a{
+    border-bottom:1px solid #ddd;
+    text-align: center;
+}
+
+.ring li>a:hover{
+    border-bottom:1px solid #666;
+
+}
+/*DR实体店下拉导航*/
+
+.area p{
+    color:#d49e85;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom:20px;
+}
+.area .hotCity{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid #ddd;
+    padding:20px;
+    width:100%;
+
+}
+.area b{
+    width:50px;
+    margin:auto;
+    display: block;
+    border-bottom:3px solid #c57d57;
+}
+.area .hotCity li{
+    padding:0 10px;
+    cursor:pointer;
+    color:#d49e85;
+}
+
+.area .hotCity li:hover{
+    position: relative;
+    top:-3px;
+}
+.area .allArea{
+    margin-top: 20px;
+}
+.area .allArea ul{
+    display: flex;
+    justify-content: space-between;
+}
+.area .allArea ul>li{
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.area .allArea ul>li:hover{
+    position:relative;
+    top:-2px;
+    left:2px;
+    color:#c57d57;
+}
+.area .left{
+    width: 50%;
+    padding-right: 30px;
+}
+
+/*右侧漂浮部分样式*/
+
+.dr_quickService{
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    background: #dbc7ba;
+    width: 50px;
+    text-align: center;
+    z-index: 7;
+    height:650px;
+    display: none;
+}
+.dr_online{
+    width:60px;
+    height:100px;
+    background: #D9B39B;
+    position: relative;
+    left:-5px;
+}
+.dr_online>span{
+    color: #fff;
+    display: block;
+    width: 30px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.online_box{
+    position: relative;
+    left:-250px;
+    top:-80px;
+    width: 220px;
+    height: 80px;
+    background: url("../imgs/icon/tc_border.png") no-repeat;
+    padding: 16px 10px;
+    line-height: 20px;
+    color:#c57d57;
+    opacity: 0;
+    transition: all .5s linear;
+}
+.online_box.hover{
+    opacity: 1;
+}
+.dr_service{
+    width:50px;
+    margin:0px auto;
+}
+.dr_service>ul>li{
+    width: 50px;
+    height:50px;
+    margin: 10px 0;
+    position: relative;
+}
+.dr_service>ul>li.hover{
+    background: #fff;
+}
+.dr_service>ul>li>a{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.dr_service>ul>li>a.quick_1{
+    background: url("../imgs/icon/icon_servie.png") no-repeat 0 -30px;
+}
+.dr_service>ul>li>a.quick_2{
+    background: url("../imgs/icon/icon_servie.png") no-repeat  0 -74px;
+}
+.dr_service>ul>li>a.quick_3{
+    background: url("../imgs/icon/icon_servie.png") no-repeat  0 -118px;
+}
+.dr_service>ul>li>a.quick_4{
+    background: url("../imgs/icon/icon_servie.png") no-repeat  0 -158px;
+}
+.dr_service>ul>li>a.quick_5{
+    background: url("../imgs/icon/icon_servie.png") no-repeat  0 -199px;
+}
+.dr_service>ul>li>a.quick_6{
+    background: url("../imgs/icon/icon_servie.png") no-repeat  0 -239px;
+}
+.dr_service>ul>li:last-child{
+    background: url("../imgs/icon/totop.jpg") no-repeat 0 0 ;
+}
+
+.dr_service>ul>li>a.quick_1:hover{
+    background: url("../imgs/icon/icon_servie.png") no-repeat -41px -30px;
+}
+.dr_service>ul>li>a.quick_2:hover{
+    background: url("../imgs/icon/icon_servie.png") no-repeat -41px  -74px;
+}
+.dr_service>ul>li>a.quick_3:hover{
+    background: url("../imgs/icon/icon_servie.png") no-repeat -41px  -118px;
+}
+.dr_service>ul>li>a.quick_4:hover{
+    background: url("../imgs/icon/icon_servie.png") no-repeat -41px  -158px;
+}
+.dr_service>ul>li>a.quick_5:hover{
+    background: url("../imgs/icon/icon_servie.png") no-repeat -41px  -199px;
+}
+.dr_service>ul>li>a.quick_6:hover{
+    background: url("../imgs/icon/icon_servie.png") no-repeat -41px  -239px;
+}
+
+.dr_service>ul>li.hover{
+    background: #eee;
+}
+.dr_service>ul>li>div.quick_word{
+    position: absolute;
+    left:-60px;
+    height:50px;
+    width:80px;
+    padding:15px 0;
+    line-height: 20px;
+    color:#c57d57;
+    text-align: center;
+    transition: all .5s linear;
+    opacity: 0;
+}
+.dr_service>ul>li>div.quick_word.hover{
+    opacity: 1;
+    left:-80px;
+
+}
+.dr_service>ul>li>div.quick_phone{
+    position: absolute;
+    left:-230px;
+    transition: all .5s linear;
+    opacity: 0;
+    z-index: -1;
+}
+.dr_service>ul>li>div.quick_phone.hover{
+    left:-250px;
+    opacity: 1;
+}
+.dr_service>ul>li>div.quick_share{
+    position: absolute;
+    left:-190px;
+    width:200px;
+    padding:10px 20px;
+    background: #fff;
+    transition: all .5s linear;
+    opacity: 0;
+    z-index: -1;
+}
+.dr_service>ul>li>div.quick_share.hover{
+    left:-200px;
+    opacity: 1;
+}
+.dr_service>ul>li>div.quick_share>a{
+    height:30px;
+    width:30px;
+    float: left;
+}
+.dr_service>ul>li>div.quick_share>a:first-child{
+    background: url("../imgs/icon/ico-shares.png")no-repeat 0 -33px;
+}
+.dr_service>ul>li>div.quick_share>a:first-child:hover{
+    background: url("../imgs/icon/ico-shares.png")no-repeat 0 -101px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(2){
+    background: url("../imgs/icon/ico-shares.png")no-repeat 0px 0px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(2):hover{
+    background: url("../imgs/icon/ico-shares.png")no-repeat 0 -68px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(3){
+    background: url("../imgs/icon/ico-shares.png")no-repeat -31px 0px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(3):hover{
+    background: url("../imgs/icon/ico-shares.png")no-repeat -31px -68px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(4){
+    background: url("../imgs/icon/ico-shares.png")no-repeat -62px 0px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(4):hover{
+    background: url("../imgs/icon/ico-shares.png")no-repeat -62px -68px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(5){
+    background: url("../imgs/icon/ico-shares.png")no-repeat -94px 0px;
+}
+.dr_service>ul>li>div.quick_share>a:nth-child(5):hover{
+    background: url("../imgs/icon/ico-shares.png")no-repeat -94px -68px;
+}
+
+/*页面尾部样式*/
+div.dr_footer{
+    width:100%;
+    margin-top:40px;
+}
+div.footer_top{
+    width:100%;
+    border-top:5px solid #000;
+    height:10px;
+    border-bottom: 2px solid #000;
+}
+div.footer_icon{
+    width:100%;
+    height:150px;
+    margin:20px 0;
+    padding:30px 0;
+}
+div.footer_icon>ul{
+    display: flex;
+    justify-content: space-around;
+}
+div.footer_icon>ul i{
+    display: block;
+    width:60px;
+    height:60px;
+    background-image: url("../imgs/icon/icon_footer.png");
+    background-repeat: no-repeat;
+}
+div.footer_icon>ul a{
+    display: block;
+    line-height: 50px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+div.footer_icon>ul li .footer_icon1{
+    background-position: 0 0;
+}
+div.footer_icon>ul li .footer_icon1:hover{
+    background-position: 0 -60px;
+}
+div.footer_icon>ul li .footer_icon2{
+    background-position: -60px 0;
+}
+div.footer_icon>ul li .footer_icon2:hover{
+    background-position: -60px -60px;
+}
+div.footer_icon>ul li .footer_icon3{
+    background-position: -120px 0;
+}
+div.footer_icon>ul li .footer_icon3:hover{
+    background-position: -120px -60px;
+}
+div.footer_icon>ul li .footer_icon4{
+    background-position: -180px 0;
+}
+div.footer_icon>ul li .footer_icon4:hover{
+    background-position: -180px -60px;
+}
+div.footer_icon>ul li .footer_icon5{
+    background-position: -240px 0;
+}
+div.footer_icon>ul li .footer_icon5:hover{
+    background-position: -240px -60px;
+}
+div.footer_icon>ul li .footer_icon6{
+    background-position: -300px 0;
+}
+div.footer_icon>ul li .footer_icon6:hover{
+    background-position: -300px -60px;
+}
+div.footer_icon>ul li .footer_icon7{
+    background-position: -360px 0;
+}
+div.footer_icon>ul li .footer_icon7:hover{
+    background-position: -360px -60px;
+}
+
+div.footer_help{
+    width:100%;
+    height:80px;
+    background-color: #e9e9e9;
+}
+div.footer_help>.container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+
+div.footer_help a{
+    padding-left:40px;
+    display: block;
+    height:40px;
+    line-height:40px;
+    font-size: 20px;
+    color: #797979;
+    background: url("../imgs/icon/coin_left.png") no-repeat;
+
+}
+div.footer{
+    background-color: #797979;
+    min-height: 500px;
+    padding-top: 60px;
+}
+div.footer_items>ul{
+    display: flex;
+    justify-content: space-around;
+    color:#cdcdcd;
+}
+
+div.footer_items>ul h4{
+    font-weight: 600;
+    margin:5px 0;
+}
+div.footer_items>ul a{
+    line-height: 20px;
+}
+div.footer_items>ul>b{
+    display: inline-block;
+    height:90px;
+    border-left:1px solid #aaa;
+}
+div.copy{
+    color:#c9c7c7;
+    font-size: 10px;
+    text-align: center;
+    margin-top:30px;
+}
+div.friendShare{
+    margin-top: 10px;
+    text-align: center;
+    color:#999898;
+}
+div.friendShare>a{
+    font-size: 10px;
+    color:#999898;
+    margin:0 5px;
+    line-height: 14px;
+}
+div.lang{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color:#fff;
+}
+
+
+/*app*/
+/*five-seconds*/
+.mir{
+    min-width:1260px;
+    width:100%;
+    min-height:1000px;
+    background-color:rgba(160,160,160,0.7);
+    display:none;
+    position:fixed;
+    left:0;top:0;
+    z-index:20;
+}
+
+.five-seconds{
+    padding-top:20px;
+    width:200px;
+    min-height:100px;text-align:center;
+    border:2px solid #c57d57;
+    position:fixed;
+    top:50%;left:50%;
+    margin-top:-50px;margin-left:-100px;
+    z-index:30;
+    background: #fff;
+}
+.mir .five-seconds p{
+    margin-bottom:20px;
+}
