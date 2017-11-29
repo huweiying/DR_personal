@@ -15,7 +15,7 @@
 </header>
 <!--主体部分-->
 <section>
-	<div class="shoppingcart">
+	<div class="shoppingcart"  id="app">
 		<div class="cart-list">
 			<!--购物车标题-->
 			<div class="check-head">
@@ -42,7 +42,7 @@
 					<thead >
 					<tr class="thead" border="1">
 						<td width="150px" colspan="2" class="padleft-20">
-							<input type="checkbox" checked id="checkall">全选
+							<input type="checkbox" @click="checkall()" :checked="checkAll">全选
 						</td>
 						<td width="500px" align="center">商品</td>
 						<td width="260px" class="nopad_left border_dashed">
@@ -61,73 +61,41 @@
 					</thead>
 					<!--加载tbody 的第一行-->
 					<tbody class="cart-tbody" id="cart-tbody">
-				<!--	<tr class="cart-lists">
+					<tr class="cart-lists" v-for="(p,index) in plist">
 						<td width="30px" colspan="" class="padleft_20" valign="top">
-							<input type="checkbox" name="" data-price="33749.00" data-id="241169" id="241169" value="1" checked="checked" class="cbox">
+							<input type="checkbox" name=""  value="1"  class="cbox" @click="checked(p)" :checked="p.checked">
 						</td>
 						<td width="120px" valign="top">
-							<img src="imgs/cart/1507616536.jpg" alt="" width="100" height="100">
+							<img :src="p.pic" alt="" width="100" height="100">
 						</td>
 						<td width="280px" class="nopad_left border_dashed">
 							<strong>
-								LOCK FOREVER 系列  心·锁唯一
-								50分
-								G色
+								{{p.title}}
 							</strong>
 							<strong>求婚钻戒</strong>
 						</td>
-						<td width="260px" class="nopad_left border_dashed"> -->
-							<!--数量-->
-							<!--数量end-->
-							<!--刻字-->
-							<!--数量end-->
-					<!--	</td>
+						<td width="260px" class="nopad_left border_dashed">{{p.count}}
+
+						</td>
 						<td width="160px" class="border_dashed pay_money" align="center">
-							<span>¥33749</span>
+
+						</td>
+						<td width="160px" class="border_dashed pay_money" align="center">
+							<span>{{p.price | forMoney}}</span>
 						</td>
 
 						<td width="150px" class="border_dashed" align="center">
-							<a href="javascript:;" class="addCollect" data-id="241169">
+							<a href="javascript:" class="addCollect">
 								移入收藏夹
 							</a>
 							<br>
-							<a href="javascript:;" class="car-del" data-id="241169">
+							<a href="javascript:" class="car-del"
+							   @click="deletePro(p)">
 								删除
 							</a>
 						</td>
-					</tr> -->
-					<!--隐藏的附加信息-->
-					<tr>
-						<td class="nopad_left ring_detail" colspan="">
-							<!--	<strong>求婚钻戒信息</strong>
-                                <div class="ringdetail_hide">
-                                    <p>主钻重量：50分</p>
-                                    <div>
-                                        <p>戒托材质：白18K金</p>
-                                        <p>刻字内容：</p>
-                                        <p>手寸大小：9</p>
-                                        <p>主钻形状：圆形</p>
-                                        <p>主钻颜色：G</p>
-                                        <p>产品编号：J10098</p>
-                                        <p>系列名称：LOCK FOREVER 系列</p>
-                                    </div>
-							</div>  -->
-							<!--	<strong class="padleft_20">主石副石信息</strong>
-                                <div class="ringdetail_hide">
-                                    <p>主钻净度：VS2</p>
-                                    <div>
-                                        <p>主钻切工：VG</p>
-                                        <p>主石数量：1</p>
+					</tr>
 
-                                        <p>副石重量：10-13分</p>
-                                        <p>副石数量：13</p>
-                                    </div>
-							</div>  -->
-						</td>
-						<td align="center" valign="top" class="padright_20">
-						<!--	<a href="javascript:;" class="ringdetail_show">展开查看详情
-							</a>  -->
-						</td>
 					</tr>
 					</tbody>
 				</table>
@@ -141,7 +109,7 @@
 				</div>
 				<div class="scfoot_right">
 					<p id="cart-count">已选<strong> 1 </strong>件商品</p>
-					<p id="cart-amount">总价：¥<strong>33749</strong></p>
+					<p id="cart-amount">总价：{{total | forMoney}}</p>
 					<p>免运费</p>
 					<a href="javascript:;" id="cart-post" class="link_btn2">立即结算</a>
 				</div>
@@ -168,9 +136,12 @@
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<script src="js/cart/vue.min.js"></script>
+<script src="js/cart/vue-resource.js"></script>
+<script src="js/cart/cart-vue.js"></script>
 <!--<script src="js/myQuery.js"></script>-->
 <script src="js/index/index.js"></script>
-<script src="js/cart/cart.js"></script>
-<script src="js/cart/cart_list.js"></script>
+<!--<script src="js/cart/cart.js"></script>-->
+<!--<script src="js/cart/cart_list.js"></script>-->
 </body>
 </html>
